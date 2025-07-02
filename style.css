@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", "sans-serif";
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+.todoapp img {
+  width: 40px;
+  margin-left: 10px;
+}
+.todoapp {
+  width: 100%;
+  max-width: 540px;
+  padding: 40px 30px 70px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 80px auto 30px;
+  font-size: 23px;
+}
+.todoapp h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  background: #edeef0;
+}
+.row input {
+  background: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+ul li {
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  font-size: 20px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked-41-32.png);
+  background-position: center;
+  background-size: cover;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(./images/icon.png);
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background: #edeef0;
+}
